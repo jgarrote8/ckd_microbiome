@@ -1,8 +1,12 @@
 # =========================
-# 1) RUTAS DEL PROYECTO
+# 1) CONFIGURACIÓN DE LA MUESTRA Y RUTAS
 # =========================
 
-project_dir <- "C:/Users/egt00/Desktop/TFG CKD/def_ metagenoma_ run ERR11866391 _label_CKD007"
+sample_id <- "ERR11865925" # <--- 
+sample_label <- "CKD002"   # <--- 
+base_dir <- "C:/Users/egt00/Desktop/TFG CKD" # <--- 
+
+project_dir <- file.path(base_dir, paste0("metagenoma_run_", sample_id, "_label_", sample_label))
 
 raw_dir       <- file.path(project_dir, "data_raw")
 processed_dir <- file.path(project_dir, "data_processed")
@@ -28,9 +32,11 @@ dir.create(figures_dir, showWarnings = FALSE, recursive = TRUE)
 # 2) ARCHIVO DE ENTRADA (Análisis inicial de los datos de MetaPhlAn)
 # =========================
 
-meta_file <- file.path(metaphlan_dir, "ERR11866391_metaphlan_profile.txt")
+meta_file <- file.path(metaphlan_dir, paste0(sample_id, "_metaphlan_profile.txt"))
 
-file.exists(meta_file) #Comprobar si está bien la ruta
+if (!file.exists(meta_file)) {
+  stop(paste("ERROR: No se encuentra el archivo", meta_file, "."))
+}
 
 meta <- read.delim(
   meta_file,
@@ -72,12 +78,12 @@ species_df$taxon <- sub("s__", "", get_last_taxon(species_df$clade_name))
 # Limpiar SGBs (IDs de clúster genético)
 species_df <- species_df[!grepl("^t__", species_df$taxon), ]
 
-#Guardar los datos separados por filo, género, especie en CSV
-write.csv(phylum_df,  file.path(metaphlan_dir, "phylum_ERR11866391.csv"), row.names = FALSE)
-write.csv(genus_df,   file.path(metaphlan_dir, "genus_ERR11866391.csv"), row.names = FALSE)
-write.csv(species_df, file.path(metaphlan_dir, "species_ERR11866391.csv"), row.names = FALSE)
+#Guardar los datos separados por filo, género, especie en CSV usando sample_id
+write.csv(phylum_df,  file.path(metaphlan_dir, paste0("phylum_", sample_id, ".csv")), row.names = FALSE)
+write.csv(genus_df,   file.path(metaphlan_dir, paste0("genus_", sample_id, ".csv")), row.names = FALSE)
+write.csv(species_df, file.path(metaphlan_dir, paste0("species_", sample_id, ".csv")), row.names = FALSE)
 
-#Inciso: los nombres de especie o filo pueden ser muy largos para las gráficas. Esta función ajusta las gráficas para estos
+#Los nombres de especie o filo pueden ser muy largos para las gráficas. Esta función ajusta las gráficas para estos
 short_taxon <- function(x, max_chars = 28) {
   ifelse(nchar(x) > max_chars,
          paste0(substr(x, 1, max_chars - 3), "..."),
@@ -87,7 +93,7 @@ short_taxon <- function(x, max_chars = 28) {
 #Gráfico barplot de filos
 top_phyla <- head(phylum_df, 10)
 
-png(file.path(figures_dir, "top_phyla_ERR11866391.png"),
+png(file.path(figures_dir, paste0("top_phyla_", sample_id, ".png")),
     width = 1400, height = 900, res = 150)
 
 par(mar = c(5, 18, 4, 2))  
@@ -99,26 +105,26 @@ barplot(
   las = 1,
   cex.names = 0.9,
   xlab = "Relative abundance (%)",
-  main = "Top phyla - ERR11866391"
+  main = paste("Top phyla -", sample_id)
 )
 
 dev.off()
 
 # =========================
-# 4) Resto de datos estándar y gráficas para el run ERR11866391
+# 4) Resto de datos estándar y gráficas
 # =========================
 
 #-----------Top 20 especies----------
 top_species <- head(species_df, 20)
 top_species$label <- short_taxon(top_species$taxon, max_chars = 30)
 
-png(file.path(figures_dir, "top_species_ERR11866391.png"), width = 1800, height = 1200, res = 180)
+png(file.path(figures_dir, paste0("top_species_", sample_id, ".png")), width = 1800, height = 1200, res = 180)
 par(mar = c(14, 5, 4, 2))  
 barplot(
   top_species$relative_abundance,
   names.arg = top_species$label,
   las = 2, cex.names = 0.8, cex.axis = 0.9, cex.lab = 1,
-  ylab = "Relative abundance (%)", main = "Top 20 bacterial species - ERR11866391"
+  ylab = "Relative abundance (%)", main = paste("Top 20 bacterial species -", sample_id)
 )
 dev.off()
 
@@ -142,16 +148,12 @@ summary_table <- data.frame(
   value = c(n_species, FB_ratio, proteobacteria, shannon)
 )
 
-write.csv(summary_table, file.path(metaphlan_dir, "taxonomic_summary_ERR11866391.csv"), row.names = FALSE)
+write.csv(summary_table, file.path(metaphlan_dir, paste0("taxonomic_summary_", sample_id, ".csv")), row.names = FALSE)
 
 # =====================================================================================================
 #---------                  ANÁLISIS CON HUMAnN (ACTUALIZADO A KOs)        ----------------------------
 # -----------------------------------------------------------------------------------------------------
 # =====================================================================================================
-
-# =========================
-# 8) Análisis funcional HUMAnN para el run ERR11866391
-# =========================
 
 library(readr)
 library(dplyr)
@@ -159,8 +161,12 @@ library(stringr)
 library(ggplot2)
 
 # -------- Archivos de entrada HUMAnN (NUEVOS) --------
-path_relab_file <- file.path(humann_dir, "ERR11866391_pathabundance_relab.tsv")
-ko_relab_file   <- file.path(humann_dir, "ERR11866391_genefamilies_ko_relab.tsv")
+path_relab_file <- file.path(humann_dir, paste0(sample_id, "_pathabundance_relab.tsv"))
+ko_relab_file   <- file.path(humann_dir, paste0(sample_id, "_genefamilies_ko_relab.tsv"))
+
+if (!file.exists(path_relab_file) | !file.exists(ko_relab_file)) {
+  stop("ERROR: Faltan archivos de HUMAnN. Comprueba que las rutas son correctas.")
+}
 
 # -------- Cargar tablas --------
 path_relab <- read_tsv(path_relab_file, show_col_types = FALSE)
@@ -180,7 +186,7 @@ split_humann_table <- function(df) {
 path_split <- split_humann_table(path_relab)
 ko_split   <- split_humann_table(ko_relab)
 
-# -------- Quitar ruido técnico --------
+# -------- Quitar columnas sin identificar --------
 path_global <- path_split$global %>%
   filter(!feature %in% c("UNMAPPED", "UNINTEGRATED"))
 
@@ -196,17 +202,16 @@ top_pathways <- path_global %>%
   arrange(desc(.data[[path_value_col]])) %>%
   slice_head(n = 20)
 
-write.csv(top_pathways, file.path(humann_dir, "top_pathways_ERR11866391.csv"), row.names = FALSE)
+write.csv(top_pathways, file.path(humann_dir, paste0("top_pathways_", sample_id, ".csv")), row.names = FALSE)
 
 # -------- Top KOs (KEGG Orthology) --------
 top_kos <- ko_global %>%
   arrange(desc(.data[[ko_value_col]])) %>%
   slice_head(n = 30)
 
-write.csv(top_kos, file.path(humann_dir, "top_KOs_ERR11866391.csv"), row.names = FALSE)
+write.csv(top_kos, file.path(humann_dir, paste0("top_KOs_", sample_id, ".csv")), row.names = FALSE)
 
 # -------- Panel de funciones candidatas relacionadas con CKD --------
-# Unificamos el patrón para Rutas y KOs
 ckd_pattern <- paste(
   c("tryptophan", "tyrosine", "phenylalanine",
     "arginine", "ornithine", "urea", "urease", "nitrogen",
@@ -223,8 +228,8 @@ ckd_kos <- ko_global %>%
   filter(str_detect(str_to_lower(feature), ckd_pattern)) %>%
   arrange(desc(.data[[ko_value_col]]))
 
-write.csv(ckd_pathways, file.path(humann_dir, "ckd_candidate_pathways_ERR11866391.csv"), row.names = FALSE)
-write.csv(ckd_kos, file.path(humann_dir, "ckd_candidate_KOs_ERR11866391.csv"), row.names = FALSE)
+write.csv(ckd_pathways, file.path(humann_dir, paste0("ckd_candidate_pathways_", sample_id, ".csv")), row.names = FALSE)
+write.csv(ckd_kos, file.path(humann_dir, paste0("ckd_candidate_KOs_", sample_id, ".csv")), row.names = FALSE)
 
 # -------- Tabla resumen conjunta --------
 ckd_pathways_summary <- ckd_pathways %>%
@@ -236,10 +241,9 @@ ckd_kos_summary <- ckd_kos %>%
 ckd_summary <- bind_rows(ckd_pathways_summary, ckd_kos_summary) %>%
   arrange(desc(abundancia))
 
-write.csv(ckd_summary, file.path(humann_dir, "ckd_function_summary_ERR11866391.csv"), row.names = FALSE)
+write.csv(ckd_summary, file.path(humann_dir, paste0("ckd_function_summary_", sample_id, ".csv")), row.names = FALSE)
 
 # -------- Gráfico top rutas funcionales --------
-# Usamos una función para acortar nombres largos
 shorten_names <- function(x, max_length = 50) {
   ifelse(nchar(x) > max_length, paste0(substr(x, 1, max_length - 3), "..."), x)
 }
@@ -250,14 +254,14 @@ p_top_paths <- ggplot(top_pathways,
                       aes(x = reorder(short_feature, .data[[path_value_col]]), 
                           y = .data[[path_value_col]])) +
   geom_col(fill = "#8DA0CB") +
-  coord_flip() + # Gira la gráfica para que los nombres se lean perfectos
+  coord_flip() +
   labs(x = "Pathway", y = "Relative abundance", 
-       title = "Top 20 functional pathways - ERR11866391") +
+       title = paste("Top 20 functional pathways -", sample_id)) +
   theme_minimal(base_size = 12) +
   theme(axis.text.y = element_text(size = 9))
 
 ggsave(
-  filename = file.path(figures_dir, "top_pathways_ERR11866391.png"),
+  filename = file.path(figures_dir, paste0("top_pathways_", sample_id, ".png")),
   plot = p_top_paths, width = 11, height = 8, dpi = 300
 )
 
@@ -267,10 +271,10 @@ if (nrow(ckd_pathways) > 0) {
                aes(x = reorder(feature, .data[[path_value_col]]), y = .data[[path_value_col]])) +
     geom_col(fill = "#4C72B0") +
     coord_flip() +
-    labs(x = "Pathway", y = "Relative abundance", title = "CKD-related candidate pathways - ERR11866391") +
+    labs(x = "Pathway", y = "Relative abundance", title = paste("CKD-related candidate pathways -", sample_id)) +
     theme_minimal(base_size = 11)
   
-  ggsave(filename = file.path(figures_dir, "ckd_candidate_pathways_ERR11866391.png"), plot = p1, width = 10, height = 7, dpi = 300)
+  ggsave(filename = file.path(figures_dir, paste0("ckd_candidate_pathways_", sample_id, ".png")), plot = p1, width = 10, height = 7, dpi = 300)
 }
 
 # -------- Gráfico panel CKD: KOs --------
@@ -279,22 +283,19 @@ if (nrow(ckd_kos) > 0) {
                aes(x = reorder(feature, .data[[ko_value_col]]), y = .data[[ko_value_col]])) +
     geom_col(fill = "#55A868") +
     coord_flip() +
-    labs(x = "KEGG Orthology (KO)", y = "Relative abundance", title = "CKD-related candidate KOs - ERR11866391") +
+    labs(x = "KEGG Orthology (KO)", y = "Relative abundance", title = paste("CKD-related candidate KOs -", sample_id)) +
     theme_minimal(base_size = 11)
   
-  ggsave(filename = file.path(figures_dir, "ckd_candidate_KOs_ERR11866391.png"), plot = p2, width = 10, height = 7, dpi = 300)
+  ggsave(filename = file.path(figures_dir, paste0("ckd_candidate_KOs_", sample_id, ".png")), plot = p2, width = 10, height = 7, dpi = 300)
 }
 
 # =========================
-# --------- Heatmaps HUMAnN: rutas y funciones candidatas CKD ---------
+# --------- Heatmaps HUMAnN ---------
 # =========================
 
 if (!require("pheatmap")) install.packages("pheatmap")
 library(pheatmap)
 
-# =========================
-# Heatmap de rutas candidatas CKD
-# =========================
 if (nrow(ckd_pathways) > 0) {
   mat_ckd_path <- as.data.frame(ckd_pathways)
   rownames(mat_ckd_path) <- mat_ckd_path$feature
@@ -302,17 +303,14 @@ if (nrow(ckd_pathways) > 0) {
   mat_ckd_path <- as.matrix(mat_ckd_path)
   colnames(mat_ckd_path) <- "Abundancia relativa"
   
-  png(file.path(figures_dir, "heatmap_ckd_candidate_pathways_ERR11866391.png"), width = 1400, height = 1800, res = 180)
+  png(file.path(figures_dir, paste0("heatmap_ckd_candidate_pathways_", sample_id, ".png")), width = 1400, height = 1800, res = 180)
   pheatmap(
     mat_ckd_path, scale = "none", cluster_rows = TRUE, cluster_cols = FALSE,
-    border_color = NA, main = "Rutas candidatas (CKD)", fontsize_row = 9, fontsize_col = 11
+    border_color = NA, main = paste("Rutas candidatas (CKD) -", sample_id), fontsize_row = 9, fontsize_col = 11
   )
   dev.off()
 }
 
-# =========================
-# Heatmap de KOs candidatos CKD
-# =========================
 if (nrow(ckd_kos) > 0) {
   mat_ckd_ko <- as.data.frame(ckd_kos)
   rownames(mat_ckd_ko) <- mat_ckd_ko$feature
@@ -320,17 +318,14 @@ if (nrow(ckd_kos) > 0) {
   mat_ckd_ko <- as.matrix(mat_ckd_ko)
   colnames(mat_ckd_ko) <- "Abundancia relativa"
   
-  png(file.path(figures_dir, "heatmap_ckd_candidate_KOs_ERR11866391.png"), width = 1400, height = 2200, res = 180)
+  png(file.path(figures_dir, paste0("heatmap_ckd_candidate_KOs_", sample_id, ".png")), width = 1400, height = 2200, res = 180)
   pheatmap(
     mat_ckd_ko, scale = "none", cluster_rows = TRUE, cluster_cols = FALSE,
-    border_color = NA, main = "KOs candidatos (CKD)", fontsize_row = 8, fontsize_col = 11
+    border_color = NA, main = paste("KOs candidatos (CKD) -", sample_id), fontsize_row = 8, fontsize_col = 11
   )
   dev.off()
 }
 
-# =========================
-# Heatmap TOP 50 KOs
-# =========================
 top50_kos <- ko_global %>%
   arrange(desc(.data[[ko_value_col]])) %>%
   slice_head(n = 50)
@@ -342,10 +337,10 @@ if(nrow(top50_kos) > 0) {
   mat_top50_ko <- as.matrix(mat_top50_ko)
   colnames(mat_top50_ko) <- "Abundancia relativa"
   
-  png(file.path(figures_dir, "heatmap_top50_KOs_ERR11866391.png"), width = 1600, height = 2400, res = 200)
+  png(file.path(figures_dir, paste0("heatmap_top50_KOs_", sample_id, ".png")), width = 1600, height = 2400, res = 200)
   pheatmap(
     mat_top50_ko, scale = "none", cluster_rows = TRUE, cluster_cols = FALSE,
-    border_color = NA, main = "Top 50 KOs - ERR11866391", fontsize_row = 7, fontsize_col = 11
+    border_color = NA, main = paste("Top 50 KOs -", sample_id), fontsize_row = 7, fontsize_col = 11
   )
   dev.off()
 }

@@ -1,0 +1,28 @@
+"tipo","funcion","abundancia"
+"pathway","PWY-6629: superpathway of L-tryptophan biosynthesis",0.000308578
+"pathway","TRPSYN-PWY: L-tryptophan biosynthesis",0.000265178
+"pathway","ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000264528
+"pathway","GLUTORN-PWY: L-ornithine biosynthesis I",0.0002623
+"pathway","PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.000261552
+"pathway","PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.00025782
+"pathway","ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000255619
+"pathway","ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.000180695
+"pathway","PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000174111
+"pathway","ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",0.000170305
+"pathway","PWY-4984: urea cycle",0.00015664
+"pathway","PWY-6803: phosphatidylcholine acyl editing",0.00015201
+"pathway","PWY-6305: superpathway of putrescine biosynthesis",0.000130621
+"pathway","PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",0.000126574
+"pathway","POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",0.000125981
+"pathway","PWY-6630: superpathway of L-tyrosine biosynthesis",8.9307e-05
+"pathway","ORNDEG-PWY: superpathway of ornithine degradation",8.52634e-05
+"pathway","PWY-5180: toluene degradation I (aerobic) (via o-cresol)",5.62079e-05
+"pathway","ARGDEG-PWY: superpathway of L-arginine, putrescine, and 4-aminobutanoate degradation",4.0738e-05
+"pathway","ORNARGDEG-PWY: superpathway of L-arginine and L-ornithine degradation",4.0738e-05
+"pathway","AST-PWY: L-arginine degradation II (AST pathway)",3.84489e-05
+"pathway","PWY0-1221: putrescine degradation II",1.56524e-05
+"pathway","PWY-6318: L-phenylalanine degradation IV (mammalian, via side chain)",1.32055e-05
+"pathway","POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",1.16343e-05
+"pathway","CARNMET-PWY: L-carnitine degradation I",9.38299e-06
+"pathway","PWY-6922: L-N&delta;-acetylornithine biosynthesis",7.54727e-06
+"pathway","PWY-6562: norspermidine biosynthesis",3.70344e-06

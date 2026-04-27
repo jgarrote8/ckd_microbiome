@@ -1,0 +1,21 @@
+"feature","ERR11869399_humann_input_Abundance"
+"PWY-7238: sucrose biosynthesis II",0.000892993
+"PWY-5941: glycogen degradation II",0.000782826
+"PWY-7111: pyruvate fermentation to isobutanol (engineered)",0.000739072
+"VALSYN-PWY: L-valine biosynthesis",0.000734185
+"PWY-1042: glycolysis IV",0.000722013
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000687718
+"PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",0.00068162
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000606028
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000603181
+"ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",0.00060047
+"PWY-5686: UMP biosynthesis I",0.000595815
+"PWY-7790: UMP biosynthesis II",0.000595815
+"PWY-7791: UMP biosynthesis III",0.000595815
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000588197
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000586461
+"ARO-PWY: chorismate biosynthesis I",0.000584532
+"BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis",0.000577129
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000571599
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000569766
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000567694

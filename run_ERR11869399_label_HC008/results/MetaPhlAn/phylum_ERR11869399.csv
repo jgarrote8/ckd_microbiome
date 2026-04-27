@@ -1,0 +1,6 @@
+"clade_name","NCBI_tax_id","relative_abundance","additional_species","tax_level","taxon"
+"k__Bacteria|p__Firmicutes","2|1239",68.94834,"","phylum","Firmicutes"
+"k__Bacteria|p__Actinomycetota","2|201174",28.10719,"","phylum","Actinomycetota"
+"k__Bacteria|p__Pseudomonadota","2|1224",1.48633,"","phylum","Pseudomonadota"
+"k__Bacteria|p__Bacteroidota","2|976",1.37492,"","phylum","Bacteroidota"
+"k__Bacteria|p__Candidatus_Saccharibacteria","2|95818",0.08321,"","phylum","Candidatus_Saccharibacteria"

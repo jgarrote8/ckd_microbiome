@@ -1,0 +1,21 @@
+"feature","ERR11869407_humann_input_Abundance"
+"PWY-1042: glycolysis IV",0.000663423
+"PWY-7238: sucrose biosynthesis II",0.000657334
+"PWY-5941: glycogen degradation II",0.000618483
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000566065
+"PWY-8178: pentose phosphate pathway (non-oxidative branch) II",0.000545021
+"CALVIN-PWY: Calvin-Benson-Bassham cycle",0.000514121
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000493972
+"PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",0.000493655
+"PWY0-1296: purine ribonucleosides degradation",0.000487693
+"PWY-7111: pyruvate fermentation to isobutanol (engineered)",0.000480347
+"VALSYN-PWY: L-valine biosynthesis",0.000479296
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.00047397
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000470487
+"NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I",0.00046417
+"ARO-PWY: chorismate biosynthesis I",0.000459009
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000458283
+"ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",0.000456736
+"PWY-6609: adenine and adenosine salvage III",0.000456168
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000455252
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000451813

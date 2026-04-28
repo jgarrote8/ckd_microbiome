@@ -1,0 +1,21 @@
+"feature","ERR11869402_humann_input_Abundance"
+"PWY-1042: glycolysis IV",0.000332565
+"PWY-7238: sucrose biosynthesis II",0.000300785
+"DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis",0.000289769
+"PWY-5941: glycogen degradation II",0.000280515
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000279513
+"PWY-6609: adenine and adenosine salvage III",0.00026602
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000257382
+"VALSYN-PWY: L-valine biosynthesis",0.000255947
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.00025594
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000251734
+"ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",0.000246119
+"PWY66-429: fatty acid biosynthesis initiation (mitochondria)",0.000245695
+"ARO-PWY: chorismate biosynthesis I",0.00024405
+"BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis",0.000242655
+"CALVIN-PWY: Calvin-Benson-Bassham cycle",0.000242345
+"PWY-5686: UMP biosynthesis I",0.000242228
+"PWY-7790: UMP biosynthesis II",0.000242228
+"PWY-7791: UMP biosynthesis III",0.000242228
+"PWY-8178: pentose phosphate pathway (non-oxidative branch) II",0.000241779
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000240493

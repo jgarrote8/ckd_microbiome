@@ -1,0 +1,21 @@
+"feature","ERR11869411_humann_input_Abundance"
+"PWY-7238: sucrose biosynthesis II",0.00103332
+"PWY-1042: glycolysis IV",0.000870367
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000802438
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000779148
+"PWY-5941: glycogen degradation II",0.000770516
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000760001
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000756993
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000756845
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000754324
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000752297
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000751729
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000747546
+"PWY-5686: UMP biosynthesis I",0.000741233
+"PWY-7790: UMP biosynthesis II",0.000741233
+"PWY-7791: UMP biosynthesis III",0.000741233
+"ARO-PWY: chorismate biosynthesis I",0.000732297
+"CALVIN-PWY: Calvin-Benson-Bassham cycle",0.000720064
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000715236
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000698939
+"PWY66-429: fatty acid biosynthesis initiation (mitochondria)",0.000686204

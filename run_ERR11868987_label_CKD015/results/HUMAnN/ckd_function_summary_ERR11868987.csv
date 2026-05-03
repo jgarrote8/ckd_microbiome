@@ -1,0 +1,28 @@
+"tipo","funcion","abundancia"
+"pathway","PWY-6629: superpathway of L-tryptophan biosynthesis",0.000414946
+"pathway","ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000378872
+"pathway","ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000376422
+"pathway","TRPSYN-PWY: L-tryptophan biosynthesis",0.000343178
+"pathway","GLUTORN-PWY: L-ornithine biosynthesis I",0.000336467
+"pathway","PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.000324561
+"pathway","PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.000244395
+"pathway","PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000217799
+"pathway","ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.000178628
+"pathway","ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",0.000150537
+"pathway","PWY-6630: superpathway of L-tyrosine biosynthesis",0.000131638
+"pathway","PWY-6305: superpathway of putrescine biosynthesis",0.000118472
+"pathway","POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",9.76423e-05
+"pathway","PWY-4984: urea cycle",8.78356e-05
+"pathway","PWY-6803: phosphatidylcholine acyl editing",8.74954e-05
+"pathway","PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",6.45782e-05
+"pathway","POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",5.77132e-05
+"pathway","ORNDEG-PWY: superpathway of ornithine degradation",4.88397e-05
+"pathway","PWY-6922: L-N&delta;-acetylornithine biosynthesis",4.74762e-05
+"pathway","PWY-5180: toluene degradation I (aerobic) (via o-cresol)",3.1689e-05
+"pathway","AST-PWY: L-arginine degradation II (AST pathway)",1.96109e-05
+"pathway","ARGDEG-PWY: superpathway of L-arginine, putrescine, and 4-aminobutanoate degradation",1.81392e-05
+"pathway","ORNARGDEG-PWY: superpathway of L-arginine and L-ornithine degradation",1.81392e-05
+"pathway","PWY-6562: norspermidine biosynthesis",1.26159e-05
+"pathway","CARNMET-PWY: L-carnitine degradation I",5.69862e-06
+"pathway","PWY0-1221: putrescine degradation II",4.5596e-06
+"pathway","PWY-6318: L-phenylalanine degradation IV (mammalian, via side chain)",3.94837e-06

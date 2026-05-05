@@ -1,0 +1,21 @@
+"feature","ERR11866080_humann_input_Abundance"
+"PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",0.000477005
+"PWY-7238: sucrose biosynthesis II",0.0004213
+"VALSYN-PWY: L-valine biosynthesis",0.000413474
+"PWY-1042: glycolysis IV",0.000387391
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000386496
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000383705
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000382081
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000380954
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000372737
+"PWY-6609: adenine and adenosine salvage III",0.000355566
+"PWY-5686: UMP biosynthesis I",0.000348985
+"PWY-7790: UMP biosynthesis II",0.000348985
+"PWY-7791: UMP biosynthesis III",0.000348985
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000346311
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000339207
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000334266
+"ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",0.000332782
+"PWY-5695: inosine 5'-phosphate degradation",0.000331795
+"PWY66-429: fatty acid biosynthesis initiation (mitochondria)",0.000326952
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000323212

@@ -1,0 +1,6 @@
+"clade_name","NCBI_tax_id","relative_abundance","additional_species","tax_level","taxon"
+"k__Bacteria|p__Bacteroidota","2|976",61.34412,"","phylum","Bacteroidota"
+"k__Bacteria|p__Firmicutes","2|1239",37.84653,"","phylum","Firmicutes"
+"k__Bacteria|p__Actinomycetota","2|201174",0.50291,"","phylum","Actinomycetota"
+"k__Bacteria|p__Pseudomonadota","2|1224",0.30603,"","phylum","Pseudomonadota"
+"k__Bacteria|p__Verrucomicrobiota","2|74201",0.00042,"","phylum","Verrucomicrobiota"

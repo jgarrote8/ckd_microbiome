@@ -1,0 +1,21 @@
+"feature","ERR11869439_humann_input_Abundance"
+"DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis",0.000666339
+"TRNA-CHARGING-PWY: tRNA charging",0.000650446
+"PWY-5686: UMP biosynthesis I",0.000642499
+"PWY-7790: UMP biosynthesis II",0.000642499
+"PWY-7791: UMP biosynthesis III",0.000642499
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000629086
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000627741
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.00062501
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000621783
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000621437
+"PWY-1042: glycolysis IV",0.000607748
+"PWY-6609: adenine and adenosine salvage III",0.00059453
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000590724
+"COA-PWY-1: superpathway of coenzyme A biosynthesis III (mammals)",0.000585076
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000583428
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000570907
+"COA-PWY: coenzyme A biosynthesis I (prokaryotic)",0.000565051
+"PWY-7851: coenzyme A biosynthesis II (eukaryotic)",0.000565051
+"PWY-6700: queuosine biosynthesis I (de novo)",0.000546438
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000544685

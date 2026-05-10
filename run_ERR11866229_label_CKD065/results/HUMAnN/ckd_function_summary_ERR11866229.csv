@@ -1,0 +1,29 @@
+"tipo","funcion","abundancia"
+"pathway","PWY-6629: superpathway of L-tryptophan biosynthesis",0.000292576
+"pathway","ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000268861
+"pathway","ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000267545
+"pathway","PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.000262914
+"pathway","TRPSYN-PWY: L-tryptophan biosynthesis",0.000239649
+"pathway","GLUTORN-PWY: L-ornithine biosynthesis I",0.000239086
+"pathway","PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.000224673
+"pathway","PWY-6803: phosphatidylcholine acyl editing",0.000173511
+"pathway","ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",0.000168002
+"pathway","ORNDEG-PWY: superpathway of ornithine degradation",0.000161669
+"pathway","PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000151757
+"pathway","PWY-6305: superpathway of putrescine biosynthesis",0.000151644
+"pathway","ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.000141202
+"pathway","PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",0.00013705
+"pathway","PWY-5180: toluene degradation I (aerobic) (via o-cresol)",0.000132156
+"pathway","POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",0.00012318
+"pathway","PWY-4984: urea cycle",0.00011375
+"pathway","PWY-6630: superpathway of L-tyrosine biosynthesis",8.42493e-05
+"pathway","ARGDEG-PWY: superpathway of L-arginine, putrescine, and 4-aminobutanoate degradation",6.44668e-05
+"pathway","ORNARGDEG-PWY: superpathway of L-arginine and L-ornithine degradation",6.44668e-05
+"pathway","AST-PWY: L-arginine degradation II (AST pathway)",5.98003e-05
+"pathway","PWY0-1221: putrescine degradation II",2.86171e-05
+"pathway","PWY-6922: L-N&delta;-acetylornithine biosynthesis",1.38762e-05
+"pathway","CARNMET-PWY: L-carnitine degradation I",1.03354e-05
+"pathway","PWY-6318: L-phenylalanine degradation IV (mammalian, via side chain)",6.67264e-06
+"pathway","PWY-6562: norspermidine biosynthesis",6.12461e-06
+"pathway","POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",5.20453e-06
+"pathway","TYRFUMCAT-PWY: L-tyrosine degradation I",1.17841e-06

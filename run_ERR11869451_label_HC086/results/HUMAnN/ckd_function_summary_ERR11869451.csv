@@ -1,0 +1,26 @@
+"tipo","funcion","abundancia"
+"pathway","PWY-6629: superpathway of L-tryptophan biosynthesis",0.000494143
+"pathway","GLUTORN-PWY: L-ornithine biosynthesis I",0.000446289
+"pathway","ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000440761
+"pathway","ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000438223
+"pathway","TRPSYN-PWY: L-tryptophan biosynthesis",0.000405391
+"pathway","PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.000354305
+"pathway","PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.000189282
+"pathway","ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.000176168
+"pathway","ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",0.00014564
+"pathway","PWY-6305: superpathway of putrescine biosynthesis",0.000139046
+"pathway","PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000111909
+"pathway","POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",9.13243e-05
+"pathway","PWY-6630: superpathway of L-tyrosine biosynthesis",8.9151e-05
+"pathway","PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",7.30578e-05
+"pathway","ORNDEG-PWY: superpathway of ornithine degradation",6.97655e-05
+"pathway","PWY-6803: phosphatidylcholine acyl editing",5.20225e-05
+"pathway","AST-PWY: L-arginine degradation II (AST pathway)",2.62972e-05
+"pathway","ARGDEG-PWY: superpathway of L-arginine, putrescine, and 4-aminobutanoate degradation",2.05261e-05
+"pathway","ORNARGDEG-PWY: superpathway of L-arginine and L-ornithine degradation",2.05261e-05
+"pathway","PWY-6318: L-phenylalanine degradation IV (mammalian, via side chain)",7.94966e-06
+"pathway","PWY0-1221: putrescine degradation II",5.5745e-06
+"pathway","POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",5.39356e-06
+"pathway","PWY-6922: L-N&delta;-acetylornithine biosynthesis",4.98318e-06
+"pathway","PWY-4984: urea cycle",4.32226e-06
+"pathway","CARNMET-PWY: L-carnitine degradation I",1.59497e-06

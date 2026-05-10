@@ -1,0 +1,22 @@
+"feature","ERR11869439_humann_input_Abundance"
+"PWY-6629: superpathway of L-tryptophan biosynthesis",0.000423219
+"TRPSYN-PWY: L-tryptophan biosynthesis",0.000395654
+"ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000341622
+"ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000340186
+"PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.000291238
+"PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.00027859
+"GLUTORN-PWY: L-ornithine biosynthesis I",0.000263993
+"PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000166959
+"ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.00015081
+"PWY-4984: urea cycle",0.000122269
+"PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",0.00010808
+"PWY-6630: superpathway of L-tyrosine biosynthesis",0.000104252
+"PWY-6305: superpathway of putrescine biosynthesis",5.75567e-05
+"ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",2.51463e-05
+"PWY-6803: phosphatidylcholine acyl editing",1.8556e-05
+"POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",1.31575e-05
+"PWY-6922: L-N&delta;-acetylornithine biosynthesis",3.8548e-06
+"POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",3.03573e-06
+"PWY-6562: norspermidine biosynthesis",1.57163e-06
+"ORNDEG-PWY: superpathway of ornithine degradation",1.48592e-06
+"AST-PWY: L-arginine degradation II (AST pathway)",1.01599e-06

@@ -1,0 +1,127 @@
+05/09/2026 05:49:21 PM - kneaddata.knead_data - INFO: Running kneaddata v0.12.4
+05/09/2026 05:49:21 PM - kneaddata.knead_data - INFO: Output files will be written to: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead
+05/09/2026 05:49:21 PM - kneaddata.knead_data - DEBUG: Running with the following arguments: 
+verbose = False
+input1 = /home/jgarrote730/tfg_ckd/raw_data/ERR11869149_1.fastq.gz
+input2 = /home/jgarrote730/tfg_ckd/raw_data/ERR11869149_2.fastq.gz
+unpaired = None
+output_dir = /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead
+scratch_dir = 
+reference_db = /home/jgarrote730/db/kneaddata/hg_39
+bypass_trim = False
+output_prefix = ERR11869149_1_kneaddata
+threads = 8
+processes = 1
+trimmomatic_quality_scores = -phred33
+bmtagger = False
+bypass_trf = False
+run_trf = False
+fastqc_start = False
+fastqc_end = False
+store_temp_output = False
+remove_intermediate_output = True
+cat_final_output = False
+log_level = DEBUG
+log = /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.log
+trimmomatic_path = /home/jgarrote730/miniforge3/envs/env_perfect/bin/trimmomatic
+run_trim_repetitive = False
+max_memory = 500m
+trimmomatic_options = None
+sequencer_source = NexteraPE
+bowtie2_path = /home/jgarrote730/miniforge3/envs/env_perfect/bin/bowtie2
+bowtie2_options = --very-sensitive-local --phred33
+decontaminate_pairs = strict
+reorder = False
+serial = True
+bmtagger_path = None
+trf_path = /home/jgarrote730/miniforge3/envs/env_perfect/bin/trf
+match = 2
+mismatch = 7
+delta = 7
+pm = 80
+pi = 10
+minscore = 50
+maxperiod = 500
+fastqc_path = None
+remove_temp_output = True
+input = /home/jgarrote730/tfg_ckd/raw_data/ERR11869149_1.fastq.gz /home/jgarrote730/tfg_ckd/raw_data/ERR11869149_2.fastq.gz
+discordant = True
+
+05/09/2026 05:49:21 PM - kneaddata.utilities - INFO: Decompressing gzipped file ...
+05/09/2026 05:49:40 PM - kneaddata.utilities - INFO: Decompressed file created: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/decompressed_nj21ylk4_ERR11869149_1.fastq
+05/09/2026 05:49:40 PM - kneaddata.utilities - INFO: Decompressing gzipped file ...
+05/09/2026 05:50:00 PM - kneaddata.utilities - INFO: Decompressed file created: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/decompressed_iyvr7m68_ERR11869149_2.fastq
+05/09/2026 05:50:00 PM - kneaddata.utilities - INFO: Reformatting file sequence identifiers ...
+05/09/2026 05:50:20 PM - kneaddata.utilities - INFO: Reformatting file sequence identifiers ...
+05/09/2026 05:50:58 PM - kneaddata.utilities - INFO: READ COUNT: raw pair1 : Initial number of reads ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers5uoug7w0_decompressed_nj21ylk4_ERR11869149_1.fastq ): 6924421.0
+05/09/2026 05:51:03 PM - kneaddata.utilities - INFO: READ COUNT: raw pair2 : Initial number of reads ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers4gizteu8_decompressed_iyvr7m68_ERR11869149_2.fastq ): 6924421.0
+05/09/2026 05:51:03 PM - kneaddata.utilities - DEBUG: Checking input file to Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers5uoug7w0_decompressed_nj21ylk4_ERR11869149_1.fastq
+05/09/2026 05:51:03 PM - kneaddata.utilities - DEBUG: Checking input file to Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers4gizteu8_decompressed_iyvr7m68_ERR11869149_2.fastq
+05/09/2026 05:51:03 PM - kneaddata.utilities - INFO: Running Trimmomatic ... 
+05/09/2026 05:51:03 PM - kneaddata.utilities - INFO: Execute command: /home/jgarrote730/miniforge3/envs/env_perfect/bin/trimmomatic PE -threads 8 -phred33 /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers5uoug7w0_decompressed_nj21ylk4_ERR11869149_1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers4gizteu8_decompressed_iyvr7m68_ERR11869149_2.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fastq MINLEN:60 ILLUMINACLIP:/home/jgarrote730/miniforge3/envs/env_perfect/lib/python3.9/site-packages/kneaddata/adapters/NexteraPE-PE.fa:2:30:10:8:TRUE SLIDINGWINDOW:4:20 MINLEN:75
+05/09/2026 05:51:46 PM - kneaddata.utilities - DEBUG: b"TrimmomaticPE: Started with arguments:\n -threads 8 -phred33 /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers5uoug7w0_decompressed_nj21ylk4_ERR11869149_1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/reformatted_identifiers4gizteu8_decompressed_iyvr7m68_ERR11869149_2.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fastq /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fastq MINLEN:60 ILLUMINACLIP:/home/jgarrote730/miniforge3/envs/env_perfect/lib/python3.9/site-packages/kneaddata/adapters/NexteraPE-PE.fa:2:30:10:8:TRUE SLIDINGWINDOW:4:20 MINLEN:75\nILLUMINACLIP: Using adapter file from user-specified absolute path: /home/jgarrote730/miniforge3/envs/env_perfect/lib/python3.9/site-packages/kneaddata/adapters/NexteraPE-PE.fa\nUsing PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'\nUsing Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'\nUsing Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'\nUsing Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'\nUsing Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'\nILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences\nInput Read Pairs: 6924421 Both Surviving: 6636440 (95.84%) Forward Only Surviving: 86858 (1.25%) Reverse Only Surviving: 130079 (1.88%) Dropped: 71044 (1.03%)\nTrimmomaticPE: Completed successfully\n"
+05/09/2026 05:51:46 PM - kneaddata.utilities - DEBUG: Checking output file from Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fastq
+05/09/2026 05:51:46 PM - kneaddata.utilities - DEBUG: Checking output file from Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fastq
+05/09/2026 05:51:46 PM - kneaddata.utilities - DEBUG: Checking output file from Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fastq
+05/09/2026 05:51:46 PM - kneaddata.utilities - DEBUG: Checking output file from Trimmomatic : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fastq
+05/09/2026 05:51:52 PM - kneaddata.utilities - INFO: READ COUNT: trimmed pair1 : Total reads after trimming ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fastq ): 6636440.0
+05/09/2026 05:51:55 PM - kneaddata.utilities - INFO: READ COUNT: trimmed pair2 : Total reads after trimming ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fastq ): 6636440.0
+05/09/2026 05:51:55 PM - kneaddata.utilities - INFO: READ COUNT: trimmed orphan1 : Total reads after trimming ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fastq ): 86858.0
+05/09/2026 05:51:55 PM - kneaddata.utilities - INFO: READ COUNT: trimmed orphan2 : Total reads after trimming ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fastq ): 130079.0
+05/09/2026 05:54:19 PM - kneaddata.utilities - DEBUG: Checking input file to trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fasta
+05/09/2026 05:54:19 PM - kneaddata.utilities - INFO: Running trf ... 
+05/09/2026 05:54:19 PM - kneaddata.utilities - INFO: Execute command: kneaddata_trf_parallel --input /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fasta --output /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fasta.trf.parameters.2.7.7.80.10.50.500.dat --trf-path /home/jgarrote730/miniforge3/envs/env_perfect/bin/trf --trf-options '2 7 7 80 10 50 500 -h -ngs' --nproc 8
+05/09/2026 05:55:55 PM - kneaddata.utilities - DEBUG: 0
+05/09/2026 05:55:55 PM - kneaddata.utilities - DEBUG: Checking output file from trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fasta.trf.parameters.2.7.7.80.10.50.500.dat
+05/09/2026 05:55:55 PM - kneaddata.utilities - DEBUG: Checking input file to trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fasta
+05/09/2026 05:55:55 PM - kneaddata.utilities - INFO: Running trf ... 
+05/09/2026 05:55:55 PM - kneaddata.utilities - INFO: Execute command: kneaddata_trf_parallel --input /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fasta --output /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fasta.trf.parameters.2.7.7.80.10.50.500.dat --trf-path /home/jgarrote730/miniforge3/envs/env_perfect/bin/trf --trf-options '2 7 7 80 10 50 500 -h -ngs' --nproc 8
+05/09/2026 05:57:27 PM - kneaddata.utilities - DEBUG: 0
+05/09/2026 05:57:27 PM - kneaddata.utilities - DEBUG: Checking output file from trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fasta.trf.parameters.2.7.7.80.10.50.500.dat
+05/09/2026 05:57:35 PM - kneaddata.run - INFO: Total number of sequences with repeats removed from file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.1.fastq ): 26399
+05/09/2026 05:57:48 PM - kneaddata.run - INFO: Total number of sequences with repeats removed from file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.2.fastq ): 26315
+05/09/2026 05:57:49 PM - kneaddata.utilities - DEBUG: Checking input file to trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fasta
+05/09/2026 05:57:49 PM - kneaddata.utilities - INFO: Running trf ... 
+05/09/2026 05:57:49 PM - kneaddata.utilities - INFO: Execute command: kneaddata_trf_parallel --input /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fasta --output /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fasta.trf.parameters.2.7.7.80.10.50.500.dat --trf-path /home/jgarrote730/miniforge3/envs/env_perfect/bin/trf --trf-options '2 7 7 80 10 50 500 -h -ngs' --nproc 8
+05/09/2026 05:57:50 PM - kneaddata.utilities - DEBUG: 0
+05/09/2026 05:57:50 PM - kneaddata.utilities - DEBUG: Checking output file from trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fasta.trf.parameters.2.7.7.80.10.50.500.dat
+05/09/2026 05:57:50 PM - kneaddata.run - INFO: Total number of sequences with repeats removed from file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.1.fastq ): 405
+05/09/2026 05:57:51 PM - kneaddata.utilities - DEBUG: Checking input file to trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fasta
+05/09/2026 05:57:51 PM - kneaddata.utilities - INFO: Running trf ... 
+05/09/2026 05:57:51 PM - kneaddata.utilities - INFO: Execute command: kneaddata_trf_parallel --input /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fasta --output /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fasta.trf.parameters.2.7.7.80.10.50.500.dat --trf-path /home/jgarrote730/miniforge3/envs/env_perfect/bin/trf --trf-options '2 7 7 80 10 50 500 -h -ngs' --nproc 8
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: 0
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: Checking output file from trf : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fasta.trf.parameters.2.7.7.80.10.50.500.dat
+05/09/2026 05:57:53 PM - kneaddata.run - INFO: Total number of sequences with repeats removed from file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.trimmed.single.2.fastq ): 572
+05/09/2026 05:57:53 PM - kneaddata.run - INFO: Decontaminating ...
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.1.fastq
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.2.fastq
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.unmatched.1.fastq
+05/09/2026 05:57:53 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.unmatched.2.fastq
+05/09/2026 05:57:53 PM - kneaddata.utilities - INFO: Running bowtie2 ... 
+05/09/2026 05:57:53 PM - kneaddata.utilities - INFO: Execute command: kneaddata_bowtie2_discordant_pairs --bowtie2 /home/jgarrote730/miniforge3/envs/env_perfect/bin/bowtie2 --threads 8 -x /home/jgarrote730/db/kneaddata/hg_39 --mode strict --bowtie2-options "--very-sensitive-local --phred33" -1 /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.1.fastq -2 /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.2.fastq --un-pair /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_%.fastq --al-pair /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_contam_%.fastq -U /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.unmatched.1.fastq,/home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata.repeats.removed.unmatched.2.fastq --un-single /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_%_clean.fastq --al-single /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_%_contam.fastq -S /dev/null
+05/09/2026 06:01:46 PM - kneaddata.utilities - DEBUG: b'[WARNING] Failed to launch x86-64-v3 version, staying with default\n[WARNING] Failed to launch x86-64-v3 version, staying with default\n13436126 reads; of these:\n  13436126 (100.00%) were unpaired; of these:\n    13433606 (99.98%) aligned 0 times\n    1385 (0.01%) aligned exactly 1 time\n    1135 (0.01%) aligned >1 times\n0.02% overall alignment rate\npair1_aligned : 1677\npair2_aligned : 1677\npair1_unaligned : 6585412\npair2_unaligned : 6585412\norphan1_aligned : 35\norphan2_aligned : 64\norphan1_unaligned : 109370\norphan2_unaligned : 152479\n'
+05/09/2026 06:01:46 PM - kneaddata.utilities - DEBUG: Checking output file from bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_1.fastq
+05/09/2026 06:01:46 PM - kneaddata.utilities - DEBUG: Checking output file from bowtie2 : /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_2.fastq
+05/09/2026 06:01:46 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_contam_1.fastq ) : 1677.0
+05/09/2026 06:01:46 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_contam_2.fastq ) : 1677.0
+05/09/2026 06:01:46 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_1_contam.fastq ) : 35.0
+05/09/2026 06:01:46 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_2_contam.fastq ) : 64.0
+05/09/2026 06:01:48 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated hg_39 pair1 : Total reads after removing those found in reference database ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_1.fastq ): 6585412.0
+05/09/2026 06:01:51 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated hg_39 pair2 : Total reads after removing those found in reference database ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_2.fastq ): 6585412.0
+05/09/2026 06:01:53 PM - kneaddata.utilities - INFO: READ COUNT: final pair1 : Total reads after merging results from multiple databases ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_paired_1.fastq ): 6585412.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - INFO: READ COUNT: final pair2 : Total reads after merging results from multiple databases ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_paired_2.fastq ): 6585412.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - WARNING: Unable to remove file: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_1.fastq
+05/09/2026 06:01:55 PM - kneaddata.utilities - WARNING: Unable to remove file: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_paired_clean_2.fastq
+05/09/2026 06:01:55 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated hg_39 orphan1 : Total reads after removing those found in reference database ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_1_clean.fastq ): 109370.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - INFO: READ COUNT: final orphan1 : Total reads after merging results from multiple databases ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_unmatched_1.fastq ): 109370.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - WARNING: Unable to remove file: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_1_clean.fastq
+05/09/2026 06:01:55 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated hg_39 orphan2 : Total reads after removing those found in reference database ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_2_clean.fastq ): 152479.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - INFO: READ COUNT: final orphan2 : Total reads after merging results from multiple databases ( /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_unmatched_2.fastq ): 152479.0
+05/09/2026 06:01:55 PM - kneaddata.utilities - WARNING: Unable to remove file: /home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_hg_39_bowtie2_unmatched_2_clean.fastq
+05/09/2026 06:01:57 PM - kneaddata.knead_data - INFO: 
+Final output files created: 
+/home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_paired_1.fastq
+/home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_paired_2.fastq
+/home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_unmatched_1.fastq
+/home/jgarrote730/tfg_ckd/cleaned_data/ERR11869149_knead/ERR11869149_1_kneaddata_unmatched_2.fastq
+

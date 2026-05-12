@@ -1,0 +1,21 @@
+"feature","ERR11869182_humann_input_Abundance"
+"DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis",0.000796094
+"PWY-5686: UMP biosynthesis I",0.00070564
+"PWY-7790: UMP biosynthesis II",0.00070564
+"PWY-7791: UMP biosynthesis III",0.00070564
+"PWY-6609: adenine and adenosine salvage III",0.000643705
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000640559
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000622752
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000614535
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000612537
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000604574
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000604574
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000598965
+"ARO-PWY: chorismate biosynthesis I",0.000583671
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000583237
+"PWY-7238: sucrose biosynthesis II",0.000570867
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000565748
+"TRNA-CHARGING-PWY: tRNA charging",0.000564322
+"VALSYN-PWY: L-valine biosynthesis",0.000564286
+"PWY-3841: folate transformations II (plants)",0.000557453
+"PWY-6123: inosine-5'-phosphate biosynthesis I",0.000544121

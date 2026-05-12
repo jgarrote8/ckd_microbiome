@@ -1,0 +1,21 @@
+"feature","ERR11866308_humann_input_Abundance"
+"PWY-1042: glycolysis IV",0.000902456
+"PWY-7238: sucrose biosynthesis II",0.000900233
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000787246
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000776931
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000755872
+"ARO-PWY: chorismate biosynthesis I",0.000741341
+"PWY-7111: pyruvate fermentation to isobutanol (engineered)",0.000741114
+"PWY0-1296: purine ribonucleosides degradation",0.000735516
+"PWY-5941: glycogen degradation II",0.000721882
+"PWY-8178: pentose phosphate pathway (non-oxidative branch) II",0.000697935
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000696964
+"PWY-5097: L-lysine biosynthesis VI",0.000683281
+"PWY-6629: superpathway of L-tryptophan biosynthesis",0.0006808
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000679608
+"VALSYN-PWY: L-valine biosynthesis",0.000679407
+"PWY-6609: adenine and adenosine salvage III",0.000674868
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.00067078
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000667804
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000666011
+"PWY-2942: L-lysine biosynthesis III",0.000659262

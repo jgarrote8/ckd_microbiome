@@ -1,0 +1,21 @@
+"feature","ERR11869471_humann_input_Abundance"
+"DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis",0.000823533
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000785772
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000727131
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.00069633
+"PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II",0.00069475
+"PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis",0.00069475
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000680866
+"PWY-5686: UMP biosynthesis I",0.000679978
+"PWY-7790: UMP biosynthesis II",0.000679978
+"PWY-7791: UMP biosynthesis III",0.000679978
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000679834
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.00067589
+"PWY-1042: glycolysis IV",0.000671049
+"PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",0.00066559
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000664916
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000663054
+"PWY-7238: sucrose biosynthesis II",0.000657785
+"ARO-PWY: chorismate biosynthesis I",0.000647416
+"COA-PWY-1: superpathway of coenzyme A biosynthesis III (mammals)",0.000643505
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000640906

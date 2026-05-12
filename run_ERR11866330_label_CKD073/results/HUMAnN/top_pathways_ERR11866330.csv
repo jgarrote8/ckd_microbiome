@@ -1,0 +1,21 @@
+"feature","ERR11866330_humann_input_Abundance"
+"PWY-7238: sucrose biosynthesis II",0.00110004
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.0010606
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.00106026
+"PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II",0.00103926
+"PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis",0.00103926
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.00101682
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.00101056
+"PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I",0.00100097
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000998339
+"COA-PWY: coenzyme A biosynthesis I (prokaryotic)",0.000986751
+"PWY-7851: coenzyme A biosynthesis II (eukaryotic)",0.000986751
+"ARO-PWY: chorismate biosynthesis I",0.000965352
+"VALSYN-PWY: L-valine biosynthesis",0.00091266
+"ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.00089441
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.00088111
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000873008
+"PWY-6700: queuosine biosynthesis I (de novo)",0.000871487
+"ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.00083255
+"PWY-6151: S-adenosyl-L-methionine salvage I",0.000789364
+"TRPSYN-PWY: L-tryptophan biosynthesis",0.000789284

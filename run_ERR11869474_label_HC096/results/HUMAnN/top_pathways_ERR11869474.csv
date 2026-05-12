@@ -1,0 +1,21 @@
+"feature","ERR11869474_humann_input_Abundance"
+"PWY-1042: glycolysis IV",0.000534774
+"PWY-7238: sucrose biosynthesis II",0.000514958
+"PWY-7221: guanosine ribonucleotides de novo biosynthesis",0.000477491
+"DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis",0.000477413
+"PWY-6163: chorismate biosynthesis from 3-dehydroquinate",0.000466482
+"NONMEVIPP-PWY: methylerythritol phosphate pathway I",0.000460346
+"PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",0.000442673
+"TRNA-CHARGING-PWY: tRNA charging",0.000441857
+"COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",0.000440989
+"ARO-PWY: chorismate biosynthesis I",0.000440646
+"PWY-5686: UMP biosynthesis I",0.000438743
+"PWY-7790: UMP biosynthesis II",0.000438743
+"PWY-7791: UMP biosynthesis III",0.000438743
+"PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",0.000435914
+"PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",0.000435325
+"PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)",0.000427672
+"PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",0.000427388
+"ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",0.000416851
+"COA-PWY-1: superpathway of coenzyme A biosynthesis III (mammals)",0.000414671
+"GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",0.000408883

@@ -1,0 +1,18 @@
+"feature","ERR11869477_humann_input_Abundance"
+"PWY-6629: superpathway of L-tryptophan biosynthesis",0.000449319
+"TRPSYN-PWY: L-tryptophan biosynthesis",0.000378463
+"ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",0.000351169
+"ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",0.000350832
+"GLUTORN-PWY: L-ornithine biosynthesis I",0.000318471
+"PWY-7400: L-arginine biosynthesis IV (archaebacteria)",0.000303295
+"PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",0.000302672
+"ARGININE-SYN4-PWY: L-ornithine biosynthesis II",0.000223944
+"PWY-6628: superpathway of L-phenylalanine biosynthesis",0.000175964
+"PWY-6630: superpathway of L-tyrosine biosynthesis",6.6412e-05
+"PWY-8187: L-arginine degradation XIII (reductive Stickland reaction)",5.91032e-05
+"PWY-4984: urea cycle",5.88993e-05
+"PWY-6305: superpathway of putrescine biosynthesis",4.30923e-05
+"ARG+POLYAMINE-SYN: superpathway of arginine and polyamine biosynthesis",3.05366e-05
+"POLYAMINSYN3-PWY: superpathway of polyamine biosynthesis II",1.66304e-05
+"POLYAMSYN-PWY: superpathway of polyamine biosynthesis I",1.60679e-05
+"PWY-6803: phosphatidylcholine acyl editing",1.02984e-05

@@ -1,0 +1,6 @@
+"clade_name","NCBI_tax_id","relative_abundance","additional_species","tax_level","taxon"
+"k__Bacteria|p__Firmicutes","2|1239",78.70599,"","phylum","Firmicutes"
+"k__Bacteria|p__Bacteroidota","2|976",11.57362,"","phylum","Bacteroidota"
+"k__Bacteria|p__Actinomycetota","2|201174",6.60067,"","phylum","Actinomycetota"
+"k__Bacteria|p__Pseudomonadota","2|1224",2.69584,"","phylum","Pseudomonadota"
+"k__Bacteria|p__Thermodesulfobacteriota","2|200940",0.42388,"","phylum","Thermodesulfobacteriota"
